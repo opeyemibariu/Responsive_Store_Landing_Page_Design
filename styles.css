@@ -1,7 +1,8 @@
+/* Global body styling: flex column layout for full viewport height */
 body {
     box-sizing: border-box;
     display: flex;
-    flex-flow: column nowrap;
+    flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
     margin: 0;
@@ -10,6 +11,7 @@ body {
     width: 100vw;
 }
 
+/* Header styling */
 header {
     background-color: #444;
     display: flex;
@@ -17,14 +19,18 @@ header {
     padding: 1em;
 }
 
+/* Navigation links */
 nav a {
     color: #fff;
+    margin-right: 1em; /* small spacing between links */
+    text-decoration: none;
 }
 
+/* Product card styling */
 .card_body {
     background-color: aqua;
     display: flex;
-    flex-flow: column nowrap;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     border: 1px solid blue;
@@ -32,35 +38,18 @@ nav a {
     height: 12em;
     border-radius: 1em;
 }
+
+/* Footer styling */
 footer {
     padding: 1em;
     background-color: black;
-    margin: 1em 0;
-    align-self: stretch;
     color: white;
     text-align: center;
+    align-self: stretch;
 }
 
-@media only screen and (max-width: 576px) {
-    body {
-        background-color: midnightblue;
-    }
-}
-
-@media only screen and (min-width: 576px) and (max-width: 768px) {
-    body {
-        background-color: pink;
-    }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 992px) {
-    body {
-        background-color: lightblue;
-    }
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
-    body {
-        background-color: peru;
-    }
-}
+/* Responsive background colors for testing responsiveness */
+@media (max-width: 576px) { body { background-color: midnightblue; } }
+@media (min-width: 576px) and (max-width: 768px) { body { background-color: pink; } }
+@media (min-width: 768px) and (max-width: 992px) { body { background-color: lightblue; } }
+@media (min-width: 992px) and (max-width: 1200px) { body { background-color: peru; } }

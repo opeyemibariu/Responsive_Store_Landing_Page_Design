@@ -3,45 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS for responsive grid, utilities, and components -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
-    <title>Responsive Store Landing Page Design</title>
+    <title>Responsive Store Landing Page</title>
 </head>
 <body>
+    <!-- Header with navigation links -->
     <header>
         <nav>
-            <a href="#" class="text-white">home</a>
-            <a href="#" class="text-white">products</a>
-            <a href="#" class="text-white">about</a>
-            <a href="#" class="text-white">contact</a>
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
         </nav>
     </header>
-    <section class="d-flex justify-content-start align-items-center ms-1 gap-3 flex-wrap">
-        <div class="card_body">
+
+    <!-- Products section using flex layout -->
+    <section class="d-flex flex-wrap gap-3 ms-1 justify-content-start align-items-start">
+        <!-- Each product card -->
+        <div class="card_body flex-shrink-0">
             <h5>Knife</h5>
-            <img src="https://images.unsplash.com/photo-1614362705324-8da11fd16754?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8a25pZmV8ZW58MHx8MHx8fDA%3D" alt="a sharp knife" width="80" height="80">
-            <p>kitchen knife</p>
+            <img src="https://images.unsplash.com/photo-1614362705324-8da11fd16754?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8a25pZmV8ZW58MHx8MHx8fDA%3D" 
+                 alt="a sharp knife" width="80" height="80">
+            <p>Kitchen knife</p>
             <button class="btn btn-primary">Shop Now</button>
         </div>
-        <div class="card_body">
+
+        <div class="card_body flex-shrink-0">
             <h5>Blender</h5>
-            <img src="https://plus.unsplash.com/premium_photo-1718043036199-d98bef36af46?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YmxlbmRlcnxlbnwwfHwwfHx8MA%3D%3D" alt="blender image" width="80" height="80">
-            <p class="card-text">transparent blender</p>
+            <img src="https://plus.unsplash.com/premium_photo-1718043036199-d98bef36af46?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YmxlbmRlcnxlbnwwfHwwfHx8MA%3D%3D" 
+                 alt="blender image" width="80" height="80">
+            <p>Transparent blender</p>
             <button class="btn btn-primary">Shop Now</button>
         </div>
-        <div class="card_body">
-            <h5 class="card-title">Spoon</h5>
-            <img src="https://plus.unsplash.com/premium_photo-1716922967265-6eb88266e37a?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c3Bvb258ZW58MHx8MHx8fDA%3D" alt="spoon image" width="80" height="80">
-            <p class="card-text">golden spoon</p>
+
+        <div class="card_body flex-shrink-0">
+            <h5>Spoon</h5>
+            <img src="https://plus.unsplash.com/premium_photo-1716922967265-6eb88266e37a?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c3Bvb258ZW58MHx8MHx8fDA%3D" 
+                 alt="spoon image" width="80" height="80">
+            <p>Golden spoon</p>
             <button class="btn btn-primary">Shop Now</button>
         </div>
-        <div class="card_body">
-            <h5 class="card-title">Plate</h5>
-            <img src="https://images.unsplash.com/photo-1587334207810-4915c4e40c67?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d2hpdGUlMjBwbGF0ZXxlbnwwfHwwfHx8MA%3D%3D" alt="plate image" width="80" height="80">
-            <p class="card-text">white plate</p>
+
+        <div class="card_body flex-shrink-0">
+            <h5>Plate</h5>
+            <img src="https://images.unsplash.com/photo-1587334207810-4915c4e40c67?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d2hpdGUlMjBwbGF0ZXxlbnwwfHwwfHx8MA%3D%3D" 
+                 alt="plate image" width="80" height="80">
+            <p>White plate</p>
             <button class="btn btn-primary">Shop Now</button>
         </div>
     </section>
+
+    <!-- Footer -->
     <footer>
         &copy; 2024 shfre electronics
     </footer>

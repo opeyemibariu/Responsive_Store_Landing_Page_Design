@@ -1,0 +1,11 @@
+Design Choices
+
+Layout: Flexbox for vertical stacking (header → section → footer); products use d-flex flex-wrap gap-3.
+
+Responsiveness: Cards wrap on small screens; fixed width with flex-shrink-0; media queries for background testing.
+
+Card Design: .card_body has fixed size, rounded corners, vertical flex layout with spaced content.
+
+Header & Footer: Dark header with horizontal nav; footer full-width, centered text.
+
+Bootstrap Use: Flex utilities (d-flex, flex-wrap, gap-3) for spacing; buttons use btn btn-primary; custom CSS avoids conflicts.
